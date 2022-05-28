@@ -1,0 +1,229 @@
+.containerArticle {
+    padding: 5% 20%;
+    text-align: left;
+  }
+  
+  .articleImage {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .authorDetails {
+    width: fit-content;
+    /* min-width: 100%; */
+    display: flex;
+    gap: 1rem;
+    margin: 1rem 0;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  
+  .authorImage {
+    box-shadow: none;
+    width: 100px;
+    height: 100px;
+  }
+  
+  .writtenBy {
+    margin: 0;
+  }
+  
+  .articleTitle {
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 0;
+  }
+  
+  .authorName {
+    font-size: 18px;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 0.5rem 0;
+  }
+  
+  .authorDetailsContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .shareBtn {
+    font-size: 30px;
+    color: gray;
+  }
+  
+  .articleTags {
+    /* background-color: whitesmoke; */
+    width: fit-content;
+    padding: 0.4rem;
+    /* color: black; */
+  }
+  
+  /* ------------------- */
+  /* Clap container      */
+  /* ------------------- */
+  
+  .clapContainer {
+    display: flex;
+    gap: 1rem;
+    margin: 1rem;
+    justify-content: flex-start;
+  }
+  
+  .clapContainer button {
+    /* background-color: white; */
+    border: none;
+    cursor: pointer;
+  }
+  
+  .clap {
+    box-shadow: none;
+  }
+  
+  /* ------------------- */
+  /* More Articles       */
+  /* ------------------- */
+  
+  .moreArticles {
+    /* margin-top: 5rem; */
+    display: flex;
+    width: 100%;
+    gap: 2rem;
+  }
+  
+  .moreAllArticle {
+    width: 26vw;
+    height: 36vh;
+  }
+  
+  .moreAllArticle h4 {
+    color: gray;
+  }
+  
+  .relatedArticleImage {
+    width: 90%;
+    height: 30vh;
+    border-radius: 0px;
+    box-shadow: none;
+  }
+  
+  .moreAllText {
+    /* padding: 0 2rem; */
+    height: 16rem;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+  
+  .moreAllText .link h2 {
+    margin-bottom: 0;
+    font-size: 20px;
+    font-weight: 500;
+  }
+  
+  .moreArticlesContainer {
+    background-color: whitesmoke;
+    padding: 1% 10%;
+    text-align: left;
+    height: 90vh;
+  }
+  
+  .Dark {
+    background-color: #2c2b2b;
+    color: white;
+  }
+  
+  .Dark2 {
+    background-color: #3b3b3b;
+    color: white;
+  }
+  .Light {
+    background-color: whitesmoke;
+    color: black;
+  }
+  .Light2 {
+    background-color: white;
+    color: black;
+  }
+  
+  .articleText {
+    /* width: 46vw; */
+    white-space: pre-line;
+    font-size: 18px;
+    text-align: left;
+    padding: 1em;
+    line-height: 1.5em;
+  }
+  
+  @media all and (max-width: 420px) {
+    .containerArticle {
+      padding: 0 5%;
+      text-align: left;
+    }
+    .authorDetailsContainer {
+      flex-direction: column-reverse;
+      align-items: flex-start;
+    }
+    .articleTitle {
+      font-size: 26px;
+      margin-bottom: 1rem;
+    }
+    .authorDetails {
+      width: 100%;
+      gap: 2rem;
+      margin-bottom: 2rem;
+    }
+    .authorName {
+      font-size: 20px;
+      font-weight: 500;
+    }
+    .Article br {
+      display: none;
+    }
+    .articleText {
+      padding-top: 0.5rem;
+    }
+    .authorDetails + hr {
+      display: none;
+    }
+    .moreArticlesContainer {
+      padding: 3% 5%;
+      height: fit-content;
+    }
+    .moreArticlesContainer hr {
+      margin-bottom: 2rem;
+    }
+    .moreArticles {
+      width: 100%;
+      padding-bottom: 5%;
+      gap: 0.5rem;
+      flex-direction: column;
+    }
+    .moreAllArticle {
+      width: 100%;
+      height: fit-content;
+      display: flex;
+      flex-direction: row-reverse;
+      /* gap: 1rem; */
+      text-align: left;
+    }
+    .moreAllArticle .link img {
+      width: 150px;
+      height: 150px;
+    }
+    .moreAllArticle h4,
+    .moreAllArticle .authorDetails img {
+      display: none;
+    }
+    .moreAllText {
+      width: 100%;
+      height: fit-content;
+      text-align: left;
+      display: flex;
+      flex-direction: column;
+    }
+    .writtenTime {
+      display: none;
+    }
+  }
